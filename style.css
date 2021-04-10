@@ -1,7 +1,4 @@
-/* Google Font Import */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-
-/* Start: Global Styles */
 
 * {
   box-sizing: border-box;
@@ -9,9 +6,9 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  margin: 0;
   height: 100vh;
   overflow: hidden;
-  margin: 0;
 }
 
 h4 {
@@ -19,7 +16,7 @@ h4 {
   margin: 5px;
   text-transform: uppercase;
 }
-/* End: Global Styles */
+
 .counter {
   position: fixed;
   top: 50%;
@@ -48,6 +45,7 @@ h4 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
+  text-align: center;
 }
 
 .final.show {
@@ -87,12 +85,12 @@ h4 {
 }
 
 .nums span.in {
-  transform: translate(-50%, -50%) rotate(0);
+  transform: translate(-50%, -50%) rotate(0deg);
   animation: goIn 0.5s ease-in-out;
 }
 
 .nums span.out {
-  animation: goOUt 0.5s ease-in-out;
+  animation: goOut 0.5s ease-in-out;
 }
 
 @keyframes goIn {
@@ -113,7 +111,7 @@ h4 {
   }
 }
 
-@keyframes goOUt {
+@keyframes goOut {
   0% {
     transform: translate(-50%, -50%) rotate(0deg);
   }
